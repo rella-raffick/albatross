@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Albatross</title>
+    <link rel="icon" href="Albatross.ico" type="icon type">
+
+    <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="albatross-style.css">
+
+    <!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+<body  style="background-color: aliceblue;">
+
+    <section id="nav-admin" style="background-color: #068b9c;">
+        <div class="container-fluid">
+              <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+                  <img src="Albatross.png" alt="" width="40" height="30" style="padding-right: 10px;">
+                <a class="navbar-brand" href="">albatross - Admin</a>
+        </div>
+            </nav>        
+    </section>
+
+    <section id="title-admin">
+        <div class="container-fluid" style="padding: 2rem;">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="create-tab" data-toggle="tab" href="#create" role="tab" aria-controls="create" aria-selected="true">Create</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="flights-tab" data-toggle="tab" href="#All-Flights" role="tab" aria-controls="flights" aria-selected="false">All Flights</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="create" role="tabpanel" aria-labelledby="create-tab">
+    <h2 style="padding-top: 2rem;">Create a flight schedule</h2>
+    <form style="padding-top: 2rem;">
+  <div class="form-row create-form">
+    <div class="form-group col-md-6">
+      <label>From</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group col-md-6">
+      <label>To</label>
+      <input type="text" class="form-control">
+    </div>
+  </div>
+     <div class="form-row create-form">
+    <div class="form-group col-md-6">
+      <label>Date</label>
+      <input type="date" class="form-control">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Time</label>
+      <input type="time" class="form-control">
+    </div>
+  </div>
+  
+  <div class="form-row create-form">
+    <div class="form-group col-md-6">
+      <label>Price</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group col-md-6">
+      <label>No.of Total Seats</label>
+      <input type="text" class="form-control">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-dark btn-lg">Create</button>
+</form>
+  </div>
+  <div class="tab-pane fade" id="All-Flights" role="tabpanel" aria-labelledby="flights-tab">
+        <h2 style="padding-top: 2rem;">List of All Present Flights</h2>
+         <div class="row" style="padding-top: 2rem;">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">MAA-DEL</h5>
+        <h6 class="card-title">09:05 - 09:45</h6>
+        <p class="card-text">01-04-2021</p>
+        <p class="card-text">Air Asia</p>
+        <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">MAA-BLR</h5>
+        <h6 class="card-title">09:05 - 09:45</h6>
+        <p class="card-text">04-04-2021</p>
+        <p class="card-text">IndiGo</p>
+       <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">MAA-CJB</h5>
+        <h6 class="card-title">16:05 - 17:15</h6>
+        <p class="card-text">27-03-2021</p>
+        <p class="card-text">Air India</p>
+        <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+       <div class="row" style="padding-top: 2rem;">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">MAA-DEL</h5>
+        <h6 class="card-title">09:05 - 09:45</h6>
+        <p class="card-text">01-04-2021</p>
+        <p class="card-text">Air Asia</p>
+        <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">MAA-BLR</h5>
+        <h6 class="card-title">09:05 - 09:45</h6>
+        <p class="card-text">04-04-2021</p>
+        <p class="card-text">IndiGo</p>
+       <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">MAA-CJB</h5>
+        <h6 class="card-title">16:05 - 17:15</h6>
+        <p class="card-text">27-03-2021</p>
+        <p class="card-text">Air India</p>
+        <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+       <div class="row" style="padding-top: 2rem;">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">MAA-DEL</h5>
+        <h6 class="card-title">09:05 - 09:45</h6>
+        <p class="card-text">01-04-2021</p>
+        <p class="card-text">Air Asia</p>
+        <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">MAA-BLR</h5>
+        <h6 class="card-title">09:05 - 09:45</h6>
+        <p class="card-text">04-04-2021</p>
+        <p class="card-text">IndiGo</p>
+       <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+       <h5 class="card-title">MAA-CJB</h5>
+        <h6 class="card-title">16:05 - 17:15</h6>
+        <p class="card-text">27-03-2021</p>
+        <p class="card-text">Air India</p>
+        <a href="admin-update.html" class="btn btn-warning" style="margin-right: 1rem;">Update</a>
+        <a href="#" class="btn btn-danger" style="margin-right: 1rem;">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </div>
+ 
+</div>
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap JS CDN -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
